@@ -1,5 +1,10 @@
 cloudinit hangs on ubuntu VM - disable early boot cloud-init with "sudo touch /etc/cloud/cloud-init.disabled"
 - doesn't get hung up on cloud-init now but wont boot GUI. stuck at "Finished Record Runlevel Change in UTMP" 
+- similar to https://askubuntu.com/questions/1333240/ubuntu-20-04-server-blocks-at-boot-cloud-init-and-login
+- tty1 still wont get past the boot sequence. can access other terminals
 
 
 add GUI to server - "sudo apt-get install tasksel && sudo tasksel" then use the tasksel menu to install your desktop
+ - see GUI notes
+
+https://www.baeldung.com/linux/combine-linux-commands

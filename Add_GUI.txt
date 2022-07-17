@@ -1,5 +1,26 @@
-uses tasksel to install the desktop
+Option 1: use tasksel to install the desktop
 References: 
 https://phoenixnap.com/kb/how-to-install-a-gui-on-ubuntu
 
 "sudo apt-get install tasksel && sudo tasksel" then use the tasksel menu to install your desktop
+- you need a display manager and a GUI. display managers include 
+	- GDM3 (default, heavy resources)
+	- SDDM
+	- SLiM
+	- LightDM (utilized by MATE) 
+ - tasksel will install both based on which GUI you chose. 
+
+
+17JUL22 - lightdm doesn't want to run, giving "lightdm.service failed with result exit-code"
+LXDE, uses lightdm
+run lxd using "sudo lxd" 
+failed, "LXD is already running" 
+warning, "instance type not operational" driver=qemu err="KVM support is missing (no /dev/kvm)" type=virtual-machine 
+- error went away by creating /dev/kvm
+- upon reboot, /dev/kvm was gone. still not loading
+used tasksel to remove LXDE
+ran "sudo apt-get install xfce4 slim" to get something working 
+- 3 display managers are already installed - SDDM, LightDM, SLiM. had to choose one for default, chose SDDM
+- tty1 still stuck on boot menu :(
+
+nuke and start over, or continue troubleshooting? 
