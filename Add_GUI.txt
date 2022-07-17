@@ -1,0 +1,5 @@
+uses tasksel to install the desktop
+References: 
+https://phoenixnap.com/kb/how-to-install-a-gui-on-ubuntu
+
+"sudo apt-get install tasksel && sudo tasksel" then use the tasksel menu to install your desktop
