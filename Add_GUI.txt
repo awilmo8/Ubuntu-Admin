@@ -8,7 +8,7 @@ https://phoenixnap.com/kb/how-to-install-a-gui-on-ubuntu
 	- SDDM
 	- SLiM
 	- LightDM (utilized by MATE) 
- - tasksel will install both based on which GUI you chose. 
+ - tasksel will install both based on which GUI you chose. Then reboot. 
 
 
 17JUL22 - lightdm doesn't want to run, giving "lightdm.service failed with result exit-code"
@@ -22,5 +22,5 @@ used tasksel to remove LXDE
 ran "sudo apt-get install xfce4 slim" to get something working 
 - 3 display managers are already installed - SDDM, LightDM, SLiM. had to choose one for default, chose SDDM
 - tty1 still stuck on boot menu :(
-
 nuke and start over, or continue troubleshooting? 
+created a new VM, tasksel process worked correctly and MATE spun up after reboot. 
