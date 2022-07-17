@@ -1,0 +1,2 @@
+cloudinit hangs on ubuntu VM - disable early boot cloud-init with "sudo touch /etc/cloud/cloud-init.disabled"
+add GUI to server - "sudo apt-get install tasksel && sudo tasksel" then use the tasksel menu to install your desktop
