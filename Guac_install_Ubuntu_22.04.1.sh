@@ -63,3 +63,5 @@ mysql -u root -p <<EOF
 # to add: libssl, libogg, libvorbis, libvorbisenc, libpulse, FreeRDP (libfreerdp2 /(libfreerdp2 / libfreerdp-client2 / libwinpr2)
 # libwebp, libwebsockets, libjpeg62-turbo-dev, libfreerdp-dev, mysql-utilities
 # TO DO: scrub dependencies, fix some of the mysql stuff, make it work 
+# links to check out: 
+# https://github.com/MysticRyuujin/guac-install
